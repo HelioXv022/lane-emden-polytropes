@@ -1,0 +1,23 @@
+{
+  "analytic_max_abs_errors": {
+    "0": 2.220446049250313e-16,
+    "1": 4.2732484217822275e-13,
+    "5": 3.536393400338511e-12
+  },
+  "n5_max_energy_drift": 1.457167719820518e-16,
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "settings": {
+    "solver": "DOP853",
+    "rtol": 1e-10,
+    "atol": 1e-12,
+    "radial_max_step": 0.1,
+    "xi_max": 40,
+    "profile_points": 4001
+  },
+  "provenance": "New computation; not a reproduction of the historical figures or table"
+}
