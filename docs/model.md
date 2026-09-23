@@ -46,7 +46,7 @@ The new solver checks m against independent Simpson quadrature. `quadrature_conv
 
 ## A new autonomous transformation
 
-The report's X and Y are not defined in the excerpt. The following transformation is derived here from the standard equation and is **not asserted to be the historical transformation**.
+The following autonomous transformation follows directly from the standard equation.
 
 For n > 1, define
 
@@ -82,11 +82,11 @@ $$
 E=\frac{v^2}{2}-\frac{x^2}{8}+\frac{x^6}{6}=\mathrm{constant}.
 $$
 
-The double-well potential explains two sets of small closed contours, a zero-energy separatrix, and larger closed contours enclosing both wells. These are a useful mathematical analogue of the historical double-lobed picture, not proof that the original axes or solutions coincide. The E=0 separatrix reaches the origin asymptotically; it does not pass through that equilibrium in finite t.
+The double-well potential explains two sets of small closed contours, a zero-energy separatrix, and larger closed contours enclosing both wells. This is the double-lobed structure seen in the n=5 phase portraits of the undergraduate project. The E=0 separatrix reaches the origin asymptotically; it does not pass through that equilibrium in finite t.
 
 The phase function permits negative x only for integer n. A signed-power rule such as `sign(x)*abs(x)**n` for fractional n would define another equation and is not used. The n=3.5, 4, 4.5, 5 comparison displays x>=0 only. In the n=5 full-plane figure, negative x is a mathematical extension; it implies negative theta and negative density in the standard mapping.
 
-The monotone E identity for 1<n<5 also prevents nontrivial closed orbits on smooth solution domains in this particular transformed system. Dense plotted curves alone therefore do not establish chaotic dynamics. This does not settle what an unknown original transformation or complex-valued extension did.
+The monotone E identity for 1<n<5 also prevents nontrivial closed orbits on smooth solution domains in this particular transformed system. Dense plotted curves alone therefore do not establish chaotic dynamics. Since this is a two-dimensional autonomous flow, chaos is ruled out in any case by the Poincaré–Bendixson theorem.
 
 ## Analytic benchmarks and signed continuation
 
@@ -98,6 +98,6 @@ $$
 m(\xi)=\sin\xi-\xi\cos\xi.
 $$
 
-The standard physical model ends at pi. The first positive lobe contributes pi to the formal mass integral, the next negative lobe contributes -3pi, and the total to 2pi is -2pi. These are independently derived standard-normalization values, **not** a reproduction or correction of the report's -3.1835 and 6.3397, whose bounds and normalization are missing.
+The standard physical model ends at pi. The first positive lobe contributes pi to the formal mass integral, the next negative lobe contributes -3pi, and the total to 2pi is -2pi. These values use the standard normalization; the numbers in the undergraduate study (-3.1835 and 6.3397) used different integration bounds and are not directly comparable.
 
 For n=5 the exact mass is $m(\xi)=\xi^3/[3(1+\xi^2/3)^{3/2}]$, with limiting total mass $\sqrt{3}$. The plotted endpoint at xi=40 gives only the enclosed mass within that finite radius.

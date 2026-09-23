@@ -1,4 +1,4 @@
-"""Independent analytic and integral checks, not historical reproduction tests."""
+"""Analytic, mass-integral and invariant checks for the Lane-Emden solver."""
 import unittest
 import numpy as np
 from scipy.integrate import solve_ivp

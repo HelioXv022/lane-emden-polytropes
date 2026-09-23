@@ -145,7 +145,7 @@ def main():
                                    "scipy": scipy.__version__, "matplotlib": matplotlib.__version__},
                    "settings": {"solver": "DOP853", "rtol":1e-10, "atol":1e-12,
                                 "radial_max_step":.1, "xi_max":40, "profile_points":4001},
-                   "provenance": "New computation; not a reproduction of the historical figures or table"}
+                   "source": "python -m lane_emden"}
     (out / "validation.json").write_text(json.dumps(diagnostics, indent=2)+"\n")
     print(json.dumps({"output":str(out), **diagnostics}, indent=2))
 

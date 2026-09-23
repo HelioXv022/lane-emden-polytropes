@@ -19,5 +19,5 @@
     "xi_max": 40,
     "profile_points": 4001
   },
-  "provenance": "New computation; not a reproduction of the historical figures or table"
+  "source": "python -m lane_emden"
 }

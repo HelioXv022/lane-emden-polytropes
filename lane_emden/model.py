@@ -1,7 +1,7 @@
 """Regular Lane-Emden solutions and an explicitly defined phase transform.
 
 The radial solver keeps the physical theta >= 0 branch. The autonomous
-system is a new derivation, not an identification of the report's X and Y.
+system uses t = ln(xi) and x = xi^a theta with a = 2/(n-1); see docs/model.md.
 """
 
 from dataclasses import dataclass

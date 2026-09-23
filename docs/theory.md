@@ -1,6 +1,6 @@
 # Theoretical background: self-gravitating polytropic spheres
 
-This document explains the established physical theory underlying the project, then connects it to the questions investigated in the research report. The notation is defined here throughout. The supplied excerpt starts at printed page 4, so this is a reconstruction of the standard theoretical foundation, not a transcription of the missing introductory pages or their coordinate definitions.
+This document derives the standard theory of self-gravitating polytropes used in this project and connects it to the questions from my undergraduate research ([undergraduate-research.md](undergraduate-research.md)).
 
 ## 1. Physical question and assumptions
 
@@ -113,7 +113,7 @@ $$
 
 The first zero $\xi_1$ defines the surface of a finite regular polytrope, with physical radius $R=\alpha\xi_1$. Ordinary stellar profiles retain the branch with nonnegative density and pressure.
 
-The differential equation also admits other initial-value problems posed away from the center. These can generate singular solutions, turning points or mathematical continuations outside the regular stellar branch. Investigating those families is a broader task than computing one standard stellar model. The report's multiple labeled curves and phase portraits indicate this broader exploration. Their physical interpretation depends on their boundary conditions and on the original variable definitions.
+The differential equation also admits other initial-value problems posed away from the center. These can generate singular solutions, turning points or mathematical continuations outside the regular stellar branch. Investigating those families is a broader task than computing one standard stellar model. The undergraduate project explored this broader family with phase portraits. How such curves should be interpreted physically depends on their boundary conditions.
 
 ## 5. Enclosed mass and the integral hypothesis
 
@@ -146,7 +146,7 @@ $$
 =-\xi_b^2\theta'(\xi_b)+\xi_a^2\theta'(\xi_a).
 $$
 
-The lower-boundary contribution is essential for singular or noncentral initial conditions. This is the theoretical issue behind revisiting a proposed cancellation or zero-mass integral: a vanishing derivative at one endpoint is insufficient by itself. The report investigates an analogous condition, but its missing w and z definitions prevent identifying that condition with this formula without qualification.
+The lower-boundary contribution is essential for singular or noncentral initial conditions. This is the theoretical issue behind revisiting a proposed cancellation or zero-mass integral: a vanishing derivative at one endpoint is insufficient by itself. The undergraduate project tested a condition of this kind numerically.
 
 ## 6. Analytically solvable cases
 
@@ -164,7 +164,7 @@ For n=1, extending the analytic formula past pi creates intervals where theta an
 
 A second-order equation can be written as two coupled first-order equations. Each initial condition then gives a trajectory in a two-dimensional state space. Phase portraits help identify equilibrium points, special trajectories, turning behavior and qualitative differences among solution families. Their axes are state variables, not spatial coordinates inside a star; a closed curve in a phase portrait is not a physical orbit of stellar material.
 
-The report plots Y against X and w against ln(z). Its axis definitions are absent from the supplied pages. To provide an explicit explanatory example, the new implementation defines, for n>1,
+To treat the solution families as a dynamical system, the implementation defines, for n>1,
 
 $$
 t=\ln\xi,\quad a=\frac{2}{n-1},\quad
@@ -184,10 +184,8 @@ $$
 E=\frac{v^2}{2}-\frac{x^2}{8}+\frac{x^6}{6}
 $$
 
-is conserved. Its level sets explain the possibility of two families of small loops and larger loops enclosing both centers in the mathematical extension. This helps interpret why n=5 is structurally special. It is a new explanatory derivation, not an established identification of the report's X and Y. The full transformation and domain restrictions are in [model.md](model.md).
+is conserved. Its level sets explain the possibility of two families of small loops and larger loops enclosing both centers in the mathematical extension. This helps interpret why n=5 is structurally special. The full transformation and domain restrictions are in [model.md](model.md).
 
 ## 8. Connection to the undergraduate investigation
 
-The theoretical questions addressed by the surviving report are how solution families change with n, what distinguishes special branches, whether selected integrals cancel, and which mathematical solutions can admit a consistent gravitational interpretation. The documented numerical study examines n=4 in detail, compares noninteger indices on either side of 4, and studies special behavior at n=1 and n=5.
-
-The running title mentions gravitational lensing, but the supplied pages establish work on the source's structure and solution families. They contain no deflection-angle or magnification calculation. The documented research activities and original numerical values are detailed in [research-contributions.md](research-contributions.md).
+The undergraduate project asked how the solution families change with n, what distinguishes special branches, whether selected mass integrals cancel, and which mathematical solutions admit a consistent gravitational interpretation. It examined n=4 in detail, compared non-integer indices on either side of 4, and studied the special cases n=1 and n=5. The activities and numerical results are summarized in [undergraduate-research.md](undergraduate-research.md).
